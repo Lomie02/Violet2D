@@ -1,0 +1,8 @@
+
+*.db
+
+.vs/VioletEngine2D/v16/Browse.VC.db-shm
+
+.vs/VioletEngine2D/v16/Browse.VC.db-wal
+
+.vs/VioletEngine2D/v16/Browse.VC.opendb
