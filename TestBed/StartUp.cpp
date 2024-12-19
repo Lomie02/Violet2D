@@ -4,8 +4,7 @@
 /*
 	Violet is a basic custom Physics Engine designed for Vertex Engine 2. As Vertex Engine evolves, so will Violet.
 
-	Developed by Dylan Smith
-
+	©Developed by Dylan Smith
 */
 
 int main() {
