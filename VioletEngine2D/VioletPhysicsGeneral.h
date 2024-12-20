@@ -6,3 +6,4 @@
 #include "vPhysicsObject.h"
 #include "vPhysicsScene.h"
 #include "VioletTestPrint.h"
+#include "vRigidBody.h"

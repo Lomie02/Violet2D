@@ -159,6 +159,7 @@
     <ClInclude Include="VioletTestPrint.h" />
     <ClInclude Include="vPhysicsObject.h" />
     <ClInclude Include="vPhysicsScene.h" />
+    <ClInclude Include="vRigidBody.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -169,8 +170,8 @@
     </ClCompile>
     <ClCompile Include="VioletEngine2D.cpp" />
     <ClCompile Include="VioletTestPrint.cpp" />
-    <ClCompile Include="vPhysicsObject.cpp" />
     <ClCompile Include="vPhysicsScene.cpp" />
+    <ClCompile Include="vRigidBody.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

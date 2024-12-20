@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Violet Physics">
+      <UniqueIdentifier>{d7701a73-d005-46b4-a024-1ded7b57433e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -24,13 +27,16 @@
     <ClInclude Include="VioletTestPrint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="vPhysicsScene.h">
+    <ClInclude Include="VioletPhysicsGeneral.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="vPhysicsObject.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Violet Physics</Filter>
     </ClInclude>
-    <ClInclude Include="VioletPhysicsGeneral.h">
+    <ClInclude Include="vPhysicsScene.h">
+      <Filter>Header Files\Violet Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="vRigidBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -47,7 +53,7 @@
     <ClCompile Include="vPhysicsScene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="vPhysicsObject.cpp">
+    <ClCompile Include="vRigidBody.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
