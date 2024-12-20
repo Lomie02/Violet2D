@@ -1,27 +1,37 @@
 #pragma once
 #include <iostream>
+#include <vector>
 #include <glm.hpp>
 
+#include "vPhysicsObject.h"
 /*
 	Violet Physics scene where all main systems start.
-
-
 */
 
 /// <summary>
 /// Violet scene where physics & collision calulations are made.
 /// </summary>
-class vPhysicsScene 
+class vPhysicsScene
 {
 public:
-	vPhysicsScene() { m_vGravity = glm::vec2(0, -1); }
-	vPhysicsScene(glm::vec2 _gravity) { m_vGravity = _gravity; }
+	vPhysicsScene();
 	~vPhysicsScene();
 
-	void StartUpViolet();
-	void UpdateVioletPhysics(float _fixedDelta);
+	void RegisterVioletObject(vPhysicsObject* _actor);
+	void RemoveVioletObject(vPhysicsObject* _actor);
 
-private:
+	void VioletCollisionChecker();
+
+	void SetWorldGravity(glm::vec2 _gravity);
+	glm::vec2 GetWorldGravity() { return m_vGravity; }
+
+
+	void UpdateVioletPhysics(const float _fixedDelta);
+	void SetTimeStep(const float _timestep) {m_vTimeStep = _timestep;}
+
+protected:
 	glm::vec2 m_vGravity;
+	float m_vTimeStep;
+	std::vector<vPhysicsObject*> m_VioletActors;
 };
 
