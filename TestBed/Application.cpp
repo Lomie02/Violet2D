@@ -17,7 +17,6 @@ void Application::Start()
 
 void Application::Update()
 {
-
 }
 
 void Application::Exit()

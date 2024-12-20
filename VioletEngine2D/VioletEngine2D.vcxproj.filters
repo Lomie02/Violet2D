@@ -24,6 +24,15 @@
     <ClInclude Include="VioletTestPrint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="vPhysicsScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vPhysicsObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VioletPhysicsGeneral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="VioletEngine2D.cpp">
@@ -33,6 +42,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="VioletTestPrint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vPhysicsScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vPhysicsObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
