@@ -1,6 +1,5 @@
 #include <iostream>
-#include <VioletTestPrint.h>
-
+#include "Application.h"
 /*
 	Violet is a basic custom Physics Engine designed for Vertex Engine 2. As Vertex Engine evolves, so will Violet.
 
@@ -9,9 +8,13 @@
 
 int main() {
 
-	VioletTestPrint VioletLib;
+	Application App;
 
-	VioletLib.PrintMessageTest();
+	App.Start();
+	while (App.GetAppState())
+	{
+		App.Update();
+	}
 
 	return 0;
 }
